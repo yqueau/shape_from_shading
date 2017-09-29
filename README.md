@@ -40,4 +40,4 @@ The main fuctions are in the Toolbox/ folder:
 
 ## References
 
-[1] "A Variational Approach to Shape-from-shading Under Natural Illumination", EMMCVPR 2017
+[1] "A Variational Approach to Shape-from-shading Under Natural Illumination", Y. Quéau et al., EMMCVPR 2017
