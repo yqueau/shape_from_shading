@@ -282,9 +282,13 @@ function [z,N,XYZ,N_SH] = generic_sfs(data,params,options);
 		% Update penalty
 		if(resPrim/resDual > options.tau)
 			options.beta = options.eta*options.beta;
+			u_p = u_p./options.eta;
+			u_q = u_q./options.eta;
 			dontstop = 1;
 		elseif(resDual/resPrim > options.tau)
 			options.beta = options.beta/options.eta;			
+			u_p = u_p.*options.eta;
+			u_q = u_q.*options.eta;
 			dontstop = 1;
 		else
 			dontstop = 0;
